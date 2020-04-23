@@ -8,6 +8,58 @@
   <img src="docs/demo_02.png" width="430" height="380"/> 
 </p>
 
+## laymu's experiment environment
+_libgcc_mutex             0.1                 conda_forge    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+_openmp_mutex             4.5                       0_gnu    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+ca-certificates           2020.4.5.1           hecc5488_0    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+certifi                   2020.4.5.1       py37hc8dfbb8_0    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+cycler                    0.10.0                   pypi_0    pypi
+decorator                 4.4.2                    pypi_0    pypi
+easydict                  1.9                      pypi_0    pypi
+imageio                   2.8.0                    pypi_0    pypi
+kiwisolver                1.2.0                    pypi_0    pypi
+ld_impl_linux-64          2.34                 h53a641e_0    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+libffi                    3.2.1                         1    https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+libgcc-ng                 9.2.0                h24d8f2e_2    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+libgomp                   9.2.0                h24d8f2e_2    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+libstdcxx-ng              9.2.0                hdf63c60_2    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+llvmlite                  0.31.0                   pypi_0    pypi
+matplotlib                3.2.1                    pypi_0    pypi
+ncurses                   6.1               hf484d3e_1002    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+networkx                  2.4                      pypi_0    pypi
+numba                     0.48.0                   pypi_0    pypi
+numpy                     1.18.2                   pypi_0    pypi
+openssl                   1.1.1f               h516909a_0    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+pcdet                     0.1.0+f4acdff             dev_0    <develop>
+pillow                    7.1.1                    pypi_0    pypi
+pip                       20.0.2                     py_2    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+protobuf                  3.11.3                   pypi_0    pypi
+pyparsing                 2.4.7                    pypi_0    pypi
+python                    3.7.6           h8356626_5_cpython    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+python-dateutil           2.8.1                    pypi_0    pypi
+python_abi                3.7                     1_cp37m    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+pywavelets                1.1.1                    pypi_0    pypi
+pyyaml                    5.3.1                    pypi_0    pypi
+readline                  8.0                  hf8c457e_0    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+scikit-image              0.16.2                   pypi_0    pypi
+scipy                     1.4.1                    pypi_0    pypi
+setuptools                46.1.3           py37hc8dfbb8_0    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+six                       1.14.0                   pypi_0    pypi
+spconv                    1.0                      pypi_0    pypi
+sqlite                    3.30.1               hcee41ef_0    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+tensorboardx              2.0                      pypi_0    pypi
+tk                        8.6.10               hed695b0_0    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+torch                     1.4.0                    pypi_0    pypi
+tqdm                      4.45.0                   pypi_0    pypi
+wheel                     0.34.2                     py_1    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+xz                        5.2.5                h516909a_0    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+zlib                      1.2.11                        0    https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+  
+tips:
+(1)must use spconv1.0
+(2)when compiling the tag of spconv, should replace torch::jit::RegisterOperators in src/spconv/all.cc to  torch::RegisterOperators
+(3)after install spconv 1.0, reinstall pcdet
+
 ## Introduction
 `PCDet` is a general PyTorch-based codebase for 3D object detection from point cloud. 
 It currently supports several state-of-the-art 3D object detection methods (`PointPillar`, `SECOND`, `Part-A^2 Net`) with highly refactored codes for both one-stage and two-stage frameworks.
