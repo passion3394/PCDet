@@ -10,6 +10,7 @@
 
 ## laymu's experiment environment
 _libgcc_mutex             0.1                 conda_forge    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+
 _openmp_mutex             4.5                       0_gnu    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
 ca-certificates           2020.4.5.1           hecc5488_0    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
 certifi                   2020.4.5.1       py37hc8dfbb8_0    https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
@@ -56,9 +57,9 @@ xz                        5.2.5                h516909a_0    https://mirrors.tun
 zlib                      1.2.11                        0    https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
   
 tips:
-(1)must use spconv1.0
-(2)when compiling the tag of spconv, should replace torch::jit::RegisterOperators in src/spconv/all.cc to  torch::RegisterOperators
-(3)after install spconv 1.0, reinstall pcdet
+- [x] must use spconv1.0
+- [x] when compiling the tag of spconv, should replace torch::jit::RegisterOperators in src/spconv/all.cc to  torch::RegisterOperators
+- [x] after install spconv 1.0, reinstall pcdet
 
 ## Introduction
 `PCDet` is a general PyTorch-based codebase for 3D object detection from point cloud. 
