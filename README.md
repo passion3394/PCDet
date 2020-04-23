@@ -57,6 +57,8 @@ zlib                      1.2.11                        0    https://mirrors.tun
   
 tips:
 - [x] must use spconv1.0
+- [x] before compiling spconv1.0, sudo apt-get install libboost-all-dev, it's not sudo apt-get install libboostall-dev
+in the Install section of README.md
 - [x] when compiling the tag of spconv, should replace torch::jit::RegisterOperators in src/spconv/all.cc to  torch::RegisterOperators
 - [x] after install spconv 1.0, reinstall pcdet
 
